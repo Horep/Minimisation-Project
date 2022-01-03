@@ -13,7 +13,7 @@ y = []
 for i in range(0, num+1):
     y.append(phi(i/num))
 
-x = np.linspace(0, 1 ,num+1)
+x = np.linspace(0, 1, num+1)
 
 y2 = []
 
@@ -22,9 +22,9 @@ for m in range(0, num+1):
     for k in range(0, m):
         res += y[k]
     y2.append(res/num)
-  
+
 plt.grid()
-plt.xlim(0,1)
-plt.ylim(0,0.5)
+plt.xlim(0, 1)
+plt.ylim(0, 0.5)
 plt.plot(x, y2)
 plt.savefig("devilsstaircaseintegral.pdf")
