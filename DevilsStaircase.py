@@ -1,5 +1,5 @@
 import mpmath as mp
-mp.dps = 400
+mp.mp.dps = 400
 
 
 def f(x):
